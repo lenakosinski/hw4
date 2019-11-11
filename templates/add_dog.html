@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block body %}
+<div>
+
+  <h3>Add a New Dog</h3>
+  
+  <form method="POST" action="{{ url_for('add_dog') }}">
+
+    {{ form.csrf_token }}
+    {{ form.name.label }} {{ form.name(size=20) }}
+    {{ form.breed.label }} {{ form.breed(size=20) }}
+    {{ form.color.label }} {{ form.color(size=20) }}
+    {{ form.age.label }} {{ form.age(size=20) }}
+
+    <input type="submit" value="Add Dog">
+
+  </form>
+
+</div>
+{% endblock %}
