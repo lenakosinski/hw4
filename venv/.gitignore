@@ -1,3 +1,6 @@
+
+secrets.py
+
 venv/
 
 instance/*
@@ -6,4 +9,4 @@ instance/*
 
 __pycache__/
 *.py[cod]
-*.py.class
+*$py.class

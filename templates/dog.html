@@ -1,4 +1,3 @@
-  
 {% extends 'base.html' %}
 {% block body %}
 <div>
@@ -29,8 +28,8 @@
     {{ form.color.label }} {{ form.color }}
     {{ form.age.label }} {{ form.age }}
 
-    <input type="submit" formaction="{{url_for('update_dog', dog_id=form.dogid)}}" value="Update">
-    <input type="submit" formaction="{{url_for('delete_dog', dog_id=form.dogid)}}" value="Delete">
+    <input type="submit" formaction="{{url_for('update_dog', dogId=form.dogId)}}" value="Update">
+    <input type="submit" formaction="{{url_for('delete_dog', dogId=form.dogId)}}" value="Delete">
 
 
 
