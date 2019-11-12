@@ -17,7 +17,7 @@ class DogForm(FlaskForm):
 def index():
     return render_template('index.html', pageTitle='Dogs of Iowa City')
 
-@app.route('/friend/new', methods=['GET', 'POST'])
+@app.route('/add', methods=['GET', 'POST'])
 def add_dog():
     form = DogForm()
     if form.validate_on_submit():
