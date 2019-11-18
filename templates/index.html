@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<p><a href="{{ url_for('.add_player')}}"> Add a new player</a></p>
+<p><a href="{{ url_for('.add_dog')}}"> Add a new dog</a></p>
 {% with messages = get_flashed_messages() %}
 {% if messages %}
 <div id='flash'>
@@ -38,10 +38,11 @@
 
 </td>
 <td>
-<form action="/delete_dog/{{ row.dogId }}" method="POST">
-<input type="submit" value="Delete" class="btn btn-danger" />
-</form>
+  <form action = "/delete_dog/{{row.dogId}}" method = "POST">
+    <input type="submit" value = "delete">
+    </form>
 </td>
+
 					</tr>
 					{% endfor %}
 {% endif %}
