@@ -43,7 +43,11 @@ def index():
     all_dogs = kosinski_dogsapp.query.all()
     return render_template('index.html', dogs=all_dogs, pagetitle='Dogs of Iowa City')
 
+<<<<<<< HEAD
 @app.route('/add_dog', methods=['GET', 'POST'])
+=======
+@app.route('/add', methods=['GET', 'POST'])
+>>>>>>> master
 def add_dog():
     form = DogForm()
     if form.validate_on_submit():
