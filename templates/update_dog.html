@@ -7,12 +7,13 @@
   <form method="POST" action="">
 
     {{ form.csrf_token }}
+    {{ form.dogId.label }} {{ form.dogId(size=5, readonly=true) }}
     {{ form.name.label }} {{ form.name(size=20) }}
     {{ form.breed.label }} {{ form.breed(size=20) }}
     {{ form.color.label }} {{ form.color(size=20) }}
     {{ form.age.label }} {{ form.age(size=20) }}
 
-    <input type="submit" value="Add Dog">
+    <input type="submit" value="Save">
 
   </form>
 
